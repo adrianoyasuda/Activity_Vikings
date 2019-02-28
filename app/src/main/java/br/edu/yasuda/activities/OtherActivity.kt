@@ -21,7 +21,7 @@ class OtherActivity : AppCompatActivity() {
 
     }
 
-    override fun onSaveInstanceState(outState: Bundle?) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putString("nome", bt2_Segunda.text.toString())
     }
