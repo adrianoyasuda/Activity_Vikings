@@ -12,32 +12,34 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val ref = "Você chegou através da Janela: Tela Principal"
+
         img_imagem.setOnClickListener{
-            telaLogo()
+            telaLogo(ref)
         }
         img_Ragnar.setOnClickListener{
-            telaRagnar()
+            telaRagnar(ref)
         }
         img_Lagertha.setOnClickListener{
-            telaLagertha()
+            telaLagertha(ref)
         }
         img_Rollo.setOnClickListener{
-            telaRollo()
+            telaRollo(ref)
         }
         img_Floki.setOnClickListener{
-            telaFloki()
+            telaFloki(ref)
         }
         img_Athelstan.setOnClickListener{
-            telaAthelstan()
+            telaAthelstan(ref)
         }
         img_Bjorn.setOnClickListener{
-            telaBjorn()
+            telaBjorn(ref)
         }
     }
 
-    private fun telaLogo() {
+    private fun telaLogo(b:String) {
         val bundle = Bundle()
-        bundle.putString("nome","Yasuda")
+        bundle.putString("nome", b)
 
         //Toast.makeText(this,"Abriu segunda Tela",Toast.LENGTH_SHORT).show()
         val intent = Intent (this, OtherActivity::class.java)
@@ -45,54 +47,55 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun telaRagnar() {
+    private fun telaRagnar(b:String) {
         val bundle = Bundle()
-        bundle.putString("Ragnar","Principal")
+
+        bundle.putString("nome",b)
 
         val intent = Intent(this, RagnarActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)
     }
 
-    private fun telaLagertha(){
+    private fun telaLagertha(b:String){
         val bundle = Bundle()
-        bundle.putString("Lagertha","Principal para Lagertha")
+        bundle.putString("nome",b)
 
         val intent = Intent(this, LagerthaActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)
     }
 
-    private fun telaRollo(){
+    private fun telaRollo(b:String){
         val bundle = Bundle()
-        bundle.putString("Rollo","Principal para Rollo")
+        bundle.putString("nome",b)
 
         val intent = Intent(this, RolloActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)
     }
 
-    private fun telaFloki(){
+    private fun telaFloki(b:String){
         val bundle = Bundle()
-        bundle.putString("Floki","Principal para Floki")
+        bundle.putString("nome",b)
 
         val intent = Intent(this, FlokiActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)
     }
 
-    private fun telaAthelstan(){
+    private fun telaAthelstan(b:String){
         val bundle = Bundle()
-        bundle.putString("Atheltan","Principal para Atheltan")
+        bundle.putString("nome",b)
 
         val intent = Intent(this, AthelstanActivity::class.java)
         intent.putExtras(bundle)
         startActivity(intent)
     }
 
-    private fun telaBjorn(){
+    private fun telaBjorn(b:String){
         val bundle = Bundle()
-        bundle.putString("Bjorn","Principal para Bjorn")
+        bundle.putString("nome",b)
 
         val intent = Intent(this, BjornActivity::class.java)
         intent.putExtras(bundle)
