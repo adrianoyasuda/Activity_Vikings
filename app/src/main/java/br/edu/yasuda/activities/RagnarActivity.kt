@@ -3,6 +3,7 @@ package br.edu.yasuda.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_ragnar.*
 
 class RagnarActivity : AppCompatActivity() {
@@ -17,7 +18,6 @@ class RagnarActivity : AppCompatActivity() {
         else{
             savedInstanceState.getString("nome")
         }
-
         val ref = "Você chegou através da Janela: Ragnar"
 
         tv_Ragnarf1.setOnClickListener{
@@ -29,12 +29,9 @@ class RagnarActivity : AppCompatActivity() {
         tv_Ragnarf3.setOnClickListener{
             telaFloki(ref)
         }
+
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString("nome", tv_Ragnarpath.text.toString())
-    }
 
     private fun telaLagertha(b:String){
         val bundle = Bundle()

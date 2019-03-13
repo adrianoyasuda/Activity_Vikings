@@ -18,7 +18,7 @@ class LagerthaActivity : AppCompatActivity() {
             savedInstanceState.getString("nome")
         }
 
-        val ref = "Você chegou através da Janela: Lagertha"
+        val ref = "Você chegou neste personagem através do personagem: Lagertha"
 
         tv_Lagethaf1.setOnClickListener{
             telaBjorn(ref)
@@ -45,5 +45,4 @@ class LagerthaActivity : AppCompatActivity() {
         intent.putExtras(bundle)
         startActivity(intent)
     }
-
 }

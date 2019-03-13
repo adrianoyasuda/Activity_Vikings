@@ -19,17 +19,18 @@
                     android:layout_height="234dp" app:layout_constraintStart_toEndOf="@+id/imageView"
                     android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
                     android:id="@+id/scrollView2">
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/textView11"
                         android:text="De acordo com o Vidente, Ragnar nasceu e cresceu nas terras perto de Kattegat, no sul da Noruega, e ganhou a reputação de ser um menino inteligente.
-          Quando Ragnar tinha 15 anos, o rei Froh de Svealand invadiu a Noruega e matou o rei norueguês Siward . Ragnar juntou-se aos legalistas de Siward para expulsar Froh.
-          O rei Froh era famoso por carregar serpentes manso ao redor de seu pescoço na batalha, que morderia seus inimigos enquanto ele lutava contra eles.
-          Com a finalidade de combater Froh, Ragnar criou um casaco e calças de couro peludo."
+    Quando Ragnar tinha 15 anos, o rei Froh de Svealand invadiu a Noruega e matou o rei norueguês Siward . Ragnar juntou-se aos legalistas de Siward para expulsar Froh.
+    O rei Froh era famoso por carregar serpentes manso ao redor de seu pescoço na batalha, que morderia seus inimigos enquanto ele lutava contra eles.
+    Com a finalidade de combater Froh, Ragnar criou um casaco e calças de couro peludo.
+    "
                         android:layout_marginTop="8dp"
                         app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView"
                         android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
@@ -75,8 +76,7 @@
                     android:id="@+id/tv_Ragnarf1" android:layout_marginTop="28dp"
                     app:layout_constraintTop_toBottomOf="@+id/textView12"
                     app:layout_constraintStart_toStartOf="@+id/textView12"
-                    app:layout_constraintEnd_toEndOf="@+id/textView12"
-            />
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"/>
             <TextView
                     android:text="Bjorn Ironside"
                     android:textSize="23dp"
@@ -95,6 +95,15 @@
                     app:layout_constraintStart_toStartOf="@+id/tv_ragnarf2"
                     app:layout_constraintHorizontal_bias="0.551" android:autoText="false" android:layout_marginTop="8dp"
                     app:layout_constraintTop_toBottomOf="@+id/tv_ragnarf2"/>
+            <TextView
+                    android:text="Ragnar Lothbrok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

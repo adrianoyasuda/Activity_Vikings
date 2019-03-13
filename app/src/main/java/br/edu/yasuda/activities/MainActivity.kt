@@ -14,9 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val ref = "Você chegou através da Janela: Tela Principal"
 
-        img_imagem.setOnClickListener{
-            telaLogo(ref)
-        }
+
         img_Ragnar.setOnClickListener{
             telaRagnar(ref)
         }
@@ -37,15 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun telaLogo(b:String) {
-        val bundle = Bundle()
-        bundle.putString("nome", b)
 
-        //Toast.makeText(this,"Abriu segunda Tela",Toast.LENGTH_SHORT).show()
-        val intent = Intent (this, OtherActivity::class.java)
-        intent.putExtras(bundle)
-        startActivity(intent)
-    }
 
     private fun telaRagnar(b:String) {
         val bundle = Bundle()
@@ -101,6 +91,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtras(bundle)
         startActivity(intent)
     }
-
-
 }
+
+//Toast.makeText(this,"Abriu segunda Tela",Toast.LENGTH_SHORT).show()
+

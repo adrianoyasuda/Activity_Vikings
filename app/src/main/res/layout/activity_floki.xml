@@ -7,13 +7,86 @@
         android:layout_height="match_parent"
         tools:context=".FlokiActivity">
 
-    <ImageView
-            android:layout_width="122dp"
-            android:layout_height="124dp" app:srcCompat="@drawable/floki"
-            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="225dp" app:layout_constraintStart_toEndOf="@+id/imageView"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="1.0">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView11"
+                        android:text="Floki é um construtor de barcos e um trapaceiro incorrigível, que também é o amigo excêntrico e mais próximo de Ragnar Lothbrok .
+    Empenhado em ajudar Ragnar a navegar para o oeste, ele secretamente projeta e constrói uma nova geração de botes salva- vidas Viking para sua viagem através do oceano para o oeste.
+    Ele também é o cônjuge do falecido  Helga , pai do falecido  Angrboda  e pai adotivo do falecido Tanaruz .
+    Floki tipifica uma pessoa neurótica com uma personalidade altamente equilibrada. Possuindo razoável medo e vasto intelecto, ele é capaz de facilmente construir naves com traços especiais para eles e sabiamente não se mantém tão imune quanto Ragnar. Em vez disso, ele sempre se mantém um estudante do mundo ao seu redor e está sempre atento, como deveria ser.
+    Sua tendência a ter nervos ruins e reagir com raiva sobre a insegurança sobre sua proeza como lutador e seu status entre outros vikings, no entanto, impedem de ganhar uma maior confiança de Ragnar para melhor guiá-lo. Na sociedade Viking, sendo tão velho e desafortunado, o conhecimento é o segundo da loucura de batalha em um homem, e é apenas proposto para a batalha, e as virtudes do conhecimento estão de mãos dadas com o ser corajoso e feroz concedido por Odin. foram silenciados por políticos e outros homens arrogantes e vistosos.
+"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView"
+                        android:layout_marginBottom="8dp" android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp" tools:ignore="HardcodedText"
+                        android:layout_marginRight="8dp"/>
+            </ScrollView>
+
+            <TextView
+                    android:text="Você chegou através da Janela: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_FlokiPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    android:layout_marginTop="60dp" app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="159dp" app:srcCompat="@drawable/floki"
+                    android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+            <TextView
+                    android:text="Floki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"/>
+            <TextView
+                    android:text="Amigos Favoritos"
+                    android:layout_width="266dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/textView12" android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_FlokiPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.5"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:includeFontPadding="false"/>
+            <TextView
+                    android:text="Ragnar Lothbrok"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Flokif"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" app:layout_constraintHorizontal_bias="0.5"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

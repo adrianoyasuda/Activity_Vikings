@@ -7,13 +7,100 @@
         android:layout_height="match_parent"
         tools:context=".AthelstanActivity">
 
-    <ImageView
-            android:layout_width="122dp"
-            android:layout_height="124dp" app:srcCompat="@drawable/athelstan"
-            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="234dp" app:layout_constraintStart_toEndOf="@+id/imageView"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                    android:id="@+id/scrollView2" android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_AthelstanPath">
+                <TextView
+                        android:id="@+id/textView11"
+                        android:text="Athelstan era um jovem anglo-saxão, outrora um monge cristão tomado como escravo por Ragnar Lothbrok e seus colegas vikings do mosteiro de Lindisfarne .
+    Athelstan foi trazido para viver na sociedade Viking e se esforça para manter suas crenças em um ambiente muito diferente de sua casa do outro lado do mar.
+    Dividido entre manter suas crenças e sobreviver em seu novo e cruel mundo, Athelstan começou a duvidar de sua fé no Deus cristão.
+
+    Apesar do mundanismo de Athelstan - extensas habilidades lingüísticas, mente lógica, conhecimento da Bíblia, etc. - ele era irremediavelmente inocente ao lidar com outras pessoas, especialmente com os ambiciosos.
+    Apesar de sua inteligência, ou talvez por causa disso, ele encontrou-se dividido entre suas antigas crenças religiosas e tradições culturais e aqueles a que ele foi exposto durante seu tempo com os vikings."
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                        android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:layout_marginRight="8dp" android:layout_margin="8dp"/>
+            </ScrollView>
+
+            <TextView
+                    android:text="Você chegou através da Janela: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_AthelstanPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    android:layout_marginTop="68dp" app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="159dp" app:srcCompat="@drawable/athelstan"
+                    android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+            <TextView
+                    android:text="Amigos Favoritos"
+                    android:layout_width="266dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/textView12" android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_AthelstanPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.496"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:includeFontPadding="false"/>
+            <TextView
+                    android:text="Bjorn Ironside"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:id="@+id/tv_Atheltanf2" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Atheltanf1"
+                    app:layout_constraintStart_toStartOf="@+id/tv_Atheltanf1"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_Atheltanf1" app:layout_constraintHorizontal_bias="0.518"/>
+            <TextView
+                    android:text="Ragnar Lothbrok"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Atheltanf1" app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+            <TextView
+                    android:text="Athelstan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,13 +7,116 @@
         android:layout_height="match_parent"
         tools:context=".BjornActivity">
 
-    <ImageView
-            android:layout_width="122dp"
-            android:layout_height="124dp" app:srcCompat="@drawable/bjorn"
-            android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="225dp" app:layout_constraintStart_toEndOf="@+id/imageView"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                    android:id="@+id/scrollView2">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView11"
+                        android:text="Björn Ironside é o rei de Kattegat, o filho mais velho de Ragnar Lothbrok e Lagertha .
+    Embora mais tarde seja revelado que seu tio Rollo pode ser seu pai biológico, Björn acredita que ele é filho de Ragnar.
+    Ele é o marido de Gunnhild , foi o terceiro marido de Torvi  e pai de quatro filhos vivos de Torvi Erik, Reil, Hali e Asa. Bjorn é o herdeiro de Ragnar para  Kattegat. Leal e emulando seu pai sábio, Björn tinha feito um nome para si mesmo, seguindo os passos de seu pai como um formidável guerreiro, líder e explorador.
+    Ele compartilha a sede de aventura do pai e deseja explorar terras distantes. A partir do final da quinta temporada, com a ajuda do rei Harald Finehair, o rei Olaf, seu meio-irmão Hvitserk Bjorn derruba seu meio-irmão mais novo e malvado, Ivar, e torna-se rei de Kattegat.
+    "
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView"
+                        android:layout_marginBottom="8dp" android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+            </ScrollView>
+            <TextView
+                    android:text="Você chegou através da Janela: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_BjornPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="160dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.388"/>
+            <ImageView
+                    android:layout_width="152dp"
+                    android:layout_height="159dp" app:srcCompat="@drawable/bjorn"
+                    android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+            <TextView
+                    android:text="Amigos Favoritos"
+                    android:layout_width="266dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/textView12" android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_BjornPath" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:includeFontPadding="false"/>
+            <TextView
+                    android:text="Lagertha"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Bjornf1" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"/>
+
+            <TextView
+                    android:text="Ragnar Lothbrok"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Bjornf2"
+                    app:layout_constraintStart_toStartOf="@+id/tv_Bjornf1"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_Bjornf1" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Bjornf1"/>
+            <TextView
+                    android:text="Floki"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Bjornf3"
+                    app:layout_constraintStart_toStartOf="@+id/tv_Bjornf2"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_Bjornf2" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Bjornf2"/>
+
+            <TextView
+                    android:text="Athelstan"
+                    android:textSize="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Bjornf4"
+                    app:layout_constraintStart_toStartOf="@+id/tv_Bjornf3"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_Bjornf3" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Bjornf3"/>
+            <TextView
+                    android:text="Bjorn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
